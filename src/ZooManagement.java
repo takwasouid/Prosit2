@@ -6,5 +6,11 @@ public class ZooManagement {
 
         myZoo.displayZoo();
         System.out.println(myZoo);
+        int index = myZoo.searchAnimal("Lion");
+        System.out.println("Lion found at index: " + index);
+
+        Animal newLion = new Animal("Lion", "Felidae", 12, true);
+        System.out.println("New Lion found at index: " + myZoo.searchAnimal(newLion.name));
     }
+
 }
