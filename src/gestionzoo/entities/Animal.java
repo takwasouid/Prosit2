@@ -6,16 +6,14 @@ public class Animal {
     private int age;
     private boolean isCarnivore;
 
-    // No-argument (default) constructor
     public Animal() {
-        // Initialize with default values (optional)
         this.species = "Unknown";
         this.name = "Unnamed";
         this.age = 0;
         this.isCarnivore = false;
     }
 
-    // Parameterized constructor
+
     public Animal(String species, String name, int age, boolean isCarnivore) {
         setSpecies(species);
         setName(name);
@@ -23,7 +21,6 @@ public class Animal {
         this.isCarnivore = isCarnivore;
     }
 
-    // Getters and Setters
     public String getSpecies() {
         return species;
     }
