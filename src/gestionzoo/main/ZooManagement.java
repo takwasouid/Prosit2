@@ -24,15 +24,14 @@ public class ZooManagement {
 
         Dolphin dolphin = new Dolphin("Mammal", "Dolphin", 5, true, "Ocean", 35.5f);
         Penguin penguin = new Penguin("Bird", "Penguin", 3, false, "Antarctica", 200.0f);
-        Terrestrial terrestrialLion = new Terrestrial("Mammal", "Lion", 12, true, 4);
 
-        System.out.println(dolphin);
-        System.out.println(penguin);
-        System.out.println(terrestrialLion);
+        myZoo.addAquaticAnimal(dolphin);
+        myZoo.addAquaticAnimal(penguin);
 
-        Aquatic genericAquatic = new Aquatic("Fish", "Shark", 7, false, "Ocean");
-        genericAquatic.swim();
-        dolphin.swim();
-        penguin.swim();
+        myZoo.displayAquaticAnimalsSwim();
+
+        System.out.println("Max Penguin Swimming Depth: " + myZoo.maxPenguinSwimmingDepth());
+
+        myZoo.displayNumberOfAquaticsByType();
     }
 }
