@@ -1,58 +1,77 @@
 package gestionzoo.entities;
 
 public class Animal {
-    private String family;
+    private String species;
     private String name;
     private int age;
-    private boolean isMammal;
+    private boolean isCarnivore;
 
-    public Animal(String family, String name, int age, boolean isMammal) {
-        this.family = family;
+    // No-argument (default) constructor
+    public Animal() {
+        // Initialize with default values (optional)
+        this.species = "Unknown";
+        this.name = "Unnamed";
+        this.age = 0;
+        this.isCarnivore = false;
+    }
+
+    // Parameterized constructor
+    public Animal(String species, String name, int age, boolean isCarnivore) {
+        setSpecies(species);
         setName(name);
         setAge(age);
-        this.isMammal = isMammal;
+        this.isCarnivore = isCarnivore;
     }
 
-    // Getter and Setter for family
-    public String getFamily() {
-        return family;
+    // Getters and Setters
+    public String getSpecies() {
+        return species;
     }
 
-    public void setFamily(String family) {
-        this.family = family;
+    public void setSpecies(String species) {
+        if (species == null || species.trim().isEmpty()) {
+            throw new IllegalArgumentException("Species cannot be empty.");
+        }
+        this.species = species;
     }
 
-    // Getter and Setter for name
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("Animal name cannot be empty");
+            throw new IllegalArgumentException("Name cannot be empty.");
         }
         this.name = name;
     }
 
-    // Getter and Setter for age
     public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
         if (age < 0) {
-            throw new IllegalArgumentException("Animal age cannot be negative");
+            throw new IllegalArgumentException("Age cannot be negative.");
         }
         this.age = age;
     }
 
-    // Getter for isMammal
-    public boolean isMammal() {
-        return isMammal;
+    public boolean isCarnivore() {
+        return isCarnivore;
+    }
+
+    public void setCarnivore(boolean isCarnivore) {
+        this.isCarnivore = isCarnivore;
     }
 
     @Override
     public String toString() {
-        return "Animal{name='" + name + "', family='" + family + "', age=" + age + ", isMammal=" + isMammal + '}';
+        return "Animal{" +
+                "species='" + species + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", isCarnivore=" + isCarnivore +
+                '}';
     }
 }
