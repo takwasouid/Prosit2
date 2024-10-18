@@ -6,7 +6,7 @@ public class Zoo {
     private String city;
     private final int nbrCages = 25;
     private Animal[] animals;
-    private int animalCount = 0;
+    private int animalCount = 20;
 
     public Zoo(String name, String city) {
         setName(name);
