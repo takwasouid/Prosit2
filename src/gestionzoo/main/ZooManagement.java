@@ -5,11 +5,21 @@ import gestionzoo.exceptions.*;
 
 public class ZooManagement {
     public static void main(String[] args) {
+        Dolphin dolphin = new Dolphin("Cetacea", "Dolphin", 8, true, "Ocean"); // Use Dolphin instead of Aquatic
+        Terrestrial lion = new Terrestrial("Felidae", "Lion", 12, true, 4);
+        Penguin penguin = new Penguin("Spheniscidae", "Penguin", 5, false, "Antarctica", 200.0f);
+
+        System.out.println("Testing food methods:");
+        dolphin.eatMeat(Food.MEAT);
+        lion.eatMeat(Food.MEAT);
+        lion.eatPlant(Food.PLANT);
+        lion.eatPlantAndMeat(Food.BOTH);
+
         Zoo myZoo = new Zoo("MyZoo", "BigCity");
 
         try {
-            Animal lion = new Animal("Felidae", "Lion", 12, true);
-            myZoo.addAnimal(lion);
+            Animal lionAnimal = new Animal("Felidae", "Lion", 12, true); // Renamed
+            myZoo.addAnimal(lionAnimal);
             System.out.println("Added Lion to the zoo.");
         } catch (ZooFullException | InvalidAgeException e) {
             System.err.println(e.getMessage());
@@ -17,8 +27,8 @@ public class ZooManagement {
         System.out.println("Current animal count: " + myZoo.getAnimalCount());
 
         try {
-            Animal dolphin = new Animal("Cetacea", "Dolphin", 8, true);
-            myZoo.addAnimal(dolphin);
+            Animal dolphinAnimal = new Animal("Cetacea", "Dolphin", 8, true); // Renamed
+            myZoo.addAnimal(dolphinAnimal);
             System.out.println("Added Dolphin to the zoo.");
         } catch (ZooFullException | InvalidAgeException e) {
             System.err.println(e.getMessage());
@@ -26,8 +36,8 @@ public class ZooManagement {
         System.out.println("Current animal count: " + myZoo.getAnimalCount());
 
         try {
-            Animal penguin = new Animal("Spheniscidae", "Penguin", 5, false);
-            myZoo.addAnimal(penguin);
+            Animal penguinAnimal = new Animal("Spheniscidae", "Penguin", 5, false); // Renamed
+            myZoo.addAnimal(penguinAnimal);
             System.out.println("Added Penguin to the zoo.");
         } catch (ZooFullException | InvalidAgeException e) {
             System.err.println(e.getMessage());

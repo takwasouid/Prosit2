@@ -3,9 +3,8 @@ package gestionzoo.entities;
 public class Dolphin extends Aquatic {
     private float swimmingSpeed;
 
-    public Dolphin(String family, String name, int age, boolean isMammal, String habitat, float swimmingSpeed) {
+    public Dolphin(String family, String name, int age, boolean isMammal, String habitat) {
         super(family, name, age, isMammal, habitat);
-        this.swimmingSpeed = swimmingSpeed;
     }
 
     public float getSwimmingSpeed() {
@@ -18,7 +17,7 @@ public class Dolphin extends Aquatic {
 
     @Override
     public void swim() {
-        System.out.println("This dolphin is swimming.");
+        System.out.println(getName() + " is swimming!");
     }
 
     @Override
