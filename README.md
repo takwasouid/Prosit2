@@ -4,7 +4,7 @@ Current Version GitHub contributors GitHub stars GitHub top language Twitter Fol
    Created by: Takwa souid
    Coached by: Klai Ghassen
 
-Table of Contents
+**Table of Contents**
 Getting Started
 Tools Required
 Authors
