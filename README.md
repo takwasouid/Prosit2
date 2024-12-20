@@ -1,10 +1,10 @@
-# **Java Prosits**
+# **Java Prosits**🐘🦓👩‍💻
 Current Version GitHub contributors GitHub stars GitHub top language
 
    Created by: Takwa souid
    Coached by: Klai Ghassen
 
-**Table of Contents**
+**Table of Contents**📂
 Getting Started
 Tools Required
 Authors
@@ -13,7 +13,7 @@ Getting Started
 
 
 
-### **Zoo Management**
+### **Zoo Management**🦓🐬
 
 The Zoo Management project is divided into multiple Prosits, each focusing on specific functionalities:
 
@@ -25,7 +25,7 @@ The Zoo Management project is divided into multiple Prosits, each focusing on sp
 - [Prosit 8](https://github.com/takwasouid/Prosit2/tree/prosit8)
 
 
-### **Employee Management**
+### **Employee Management**👩‍💻👨‍💼
 
 The Employee Management project is organized as follows:
 
@@ -69,7 +69,7 @@ Down below, you can find the project structure of Zoo Management:
 		|   └── Omnivore.java
 		└── main
                     └── ZooManagement.java
-**Down below, you can find the project structure of Employees Management:**
+**Down below, you can find the project structure of Employees Management:**📚
 
 	Java-Prosits
 	├── README.md
@@ -96,7 +96,7 @@ Down below, you can find the project structure of Zoo Management:
 		|   └── SocieteArrayList.java
 		├── .gitignore
 		
-Tools Required
+Tools Required📜
 You would require the following tools to develop and run the project:
 
 A text editor or an IDE (like IntelliJ)
