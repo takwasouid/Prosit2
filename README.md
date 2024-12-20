@@ -1,5 +1,5 @@
 # **Java Prosits**
-Current Version GitHub contributors GitHub stars GitHub top language Twitter Follow
+Current Version GitHub contributors GitHub stars GitHub top language
 
    Created by: Takwa souid
    Coached by: Klai Ghassen
@@ -10,6 +10,28 @@ Tools Required
 Authors
 License
 Getting Started
+
+
+
+### **Zoo Management**
+
+The Zoo Management project is divided into multiple Prosits, each focusing on specific functionalities:
+
+- [Prosit 3](https://github.com/takwasouid/Prosit2/tree/prosit3)
+- [Prosit 4](https://github.com/takwasouid/Prosit2/tree/prosit4)
+- [Prosit 5](https://github.com/takwasouid/Prosit2/tree/prosit5)
+- [Prosit 6](https://github.com/takwasouid/Prosit2/tree/prosit6)
+- [Prosit 7](https://github.com/takwasouid/Prosit2/tree/prosit7)
+- [Prosit 8](https://github.com/takwasouid/Prosit2/tree/prosit8)
+
+
+### **Employee Management**
+
+The Employee Management project is organized as follows:
+
+- [Prosit 10](https://github.com/takwasouid/Prosit2/tree/prosit10)
+- [Prosit 11](https://github.com/takwasouid/Prosit2/tree/prosit11)
+- [Prosit 12](https://github.com/takwasouid/Prosit2/tree/prosit12)
 
 
 **main contains aggregate code of all branches**
